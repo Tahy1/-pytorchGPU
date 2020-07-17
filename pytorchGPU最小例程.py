@@ -5,7 +5,7 @@ import torch.backends.cudnn as cudnn
 from numpy import random
 import torchvision
 
-trainData = random.random([10000,3,50,50])
+trainData = torch.randn([10000,3,50,50])
 trainData.dtype = 'float32'
 trainLabel = random.randint(0,2,100)
 
